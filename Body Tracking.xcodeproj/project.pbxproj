@@ -14,6 +14,11 @@
 		4701AAB529DE46F700B7CF54 /* Body_TrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701AAB429DE46F700B7CF54 /* Body_TrackingTests.swift */; };
 		4701AABF29DE46F700B7CF54 /* Body_TrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701AABE29DE46F700B7CF54 /* Body_TrackingUITests.swift */; };
 		4701AAC129DE46F700B7CF54 /* Body_TrackingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701AAC029DE46F700B7CF54 /* Body_TrackingUITestsLaunchTests.swift */; };
+		4701AACE29DE473B00B7CF54 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701AACD29DE473B00B7CF54 /* ARViewContainer.swift */; };
+		4701AAD029DE481100B7CF54 /* SkeletonJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701AACF29DE481100B7CF54 /* SkeletonJoint.swift */; };
+		4701AAD229DE483F00B7CF54 /* SkeletonBone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701AAD129DE483F00B7CF54 /* SkeletonBone.swift */; };
+		4701AAD429DE497C00B7CF54 /* Bones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701AAD329DE497C00B7CF54 /* Bones.swift */; };
+		4701AAD629DE4DC400B7CF54 /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701AAD529DE4DC400B7CF54 /* BodySkeleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,12 @@
 		4701AABA29DE46F700B7CF54 /* Body TrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Body TrackingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4701AABE29DE46F700B7CF54 /* Body_TrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body_TrackingUITests.swift; sourceTree = "<group>"; };
 		4701AAC029DE46F700B7CF54 /* Body_TrackingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body_TrackingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4701AACD29DE473B00B7CF54 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		4701AACF29DE481100B7CF54 /* SkeletonJoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonJoint.swift; sourceTree = "<group>"; };
+		4701AAD129DE483F00B7CF54 /* SkeletonBone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonBone.swift; sourceTree = "<group>"; };
+		4701AAD329DE497C00B7CF54 /* Bones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bones.swift; sourceTree = "<group>"; };
+		4701AAD529DE4DC400B7CF54 /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
+		4701AAD729DE5F8E00B7CF54 /* Body-Tracking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Body-Tracking-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +105,14 @@
 		4701AAA229DE46F500B7CF54 /* Body Tracking */ = {
 			isa = PBXGroup;
 			children = (
+				4701AAD729DE5F8E00B7CF54 /* Body-Tracking-Info.plist */,
 				4701AAA329DE46F500B7CF54 /* Body_TrackingApp.swift */,
 				4701AAA529DE46F500B7CF54 /* ContentView.swift */,
+				4701AACD29DE473B00B7CF54 /* ARViewContainer.swift */,
+				4701AACF29DE481100B7CF54 /* SkeletonJoint.swift */,
+				4701AAD129DE483F00B7CF54 /* SkeletonBone.swift */,
+				4701AAD329DE497C00B7CF54 /* Bones.swift */,
+				4701AAD529DE4DC400B7CF54 /* BodySkeleton.swift */,
 				4701AAA729DE46F700B7CF54 /* Assets.xcassets */,
 				4701AAA929DE46F700B7CF54 /* Preview Content */,
 			);
@@ -257,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4701AAD629DE4DC400B7CF54 /* BodySkeleton.swift in Sources */,
 				4701AAA629DE46F500B7CF54 /* ContentView.swift in Sources */,
+				4701AAD429DE497C00B7CF54 /* Bones.swift in Sources */,
+				4701AAD229DE483F00B7CF54 /* SkeletonBone.swift in Sources */,
 				4701AAA429DE46F500B7CF54 /* Body_TrackingApp.swift in Sources */,
+				4701AACE29DE473B00B7CF54 /* ARViewContainer.swift in Sources */,
+				4701AAD029DE481100B7CF54 /* SkeletonJoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,8 +439,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Body Tracking/Preview Content\"";
+				DEVELOPMENT_TEAM = YL9AB8R8B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Body-Tracking-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = hola;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,8 +470,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Body Tracking/Preview Content\"";
+				DEVELOPMENT_TEAM = YL9AB8R8B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Body-Tracking-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = hola;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
